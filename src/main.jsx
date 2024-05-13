@@ -9,6 +9,9 @@ const colors = {
     800: "#153e75",
     700: "#2a69ac",
   },
+  green: {
+    500: "#38A169", // A vibrant green shade
+  },
 };
 
 const theme = extendTheme({ colors });
