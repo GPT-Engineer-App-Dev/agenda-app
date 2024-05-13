@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Box, Button, Container, Flex, IconButton, Input, List, ListItem, Text, useToast } from '@chakra-ui/react';
+import { Box, Button, Container, Flex, IconButton, Input, List, ListItem, Text, useToast, Link } from '@chakra-ui/react';
 import { FaTrash, FaCheck } from 'react-icons/fa';
 
 const Index = () => {
@@ -28,6 +28,19 @@ const Index = () => {
   const toggleCompletion = (id) => {
     setTasks(tasks.map(task => task.id === id ? { ...task, isCompleted: !task.isCompleted } : task));
   };
+
+  const Footer = () => (
+    <Box as="footer" width="full" p={4} mt={10} bg="brand.700" color="white">
+      <Container maxW="container.md">
+        <Flex justify="space-between" align="center">
+          <Text>&copy; {new Date().getFullYear()} Todo App. All rights reserved.</Text>
+          <Link href="/privacy-policy" color="white" _hover={{ textDecoration: 'underline' }}>
+            Privacy Policy
+          </Link>
+        </Flex>
+      </Container>
+    </Box>
+  );
 
   return (
     <Container maxW="container.md" p={4}>
@@ -69,6 +82,7 @@ const Index = () => {
           </ListItem>
         ))}
       </List>
+      <Footer />
     </Container>
   );
 };
