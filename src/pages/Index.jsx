@@ -45,7 +45,7 @@ const Index = () => {
   return (
     <Container maxW="container.md" p={4}>
       <Flex as="nav" justify="space-between" align="center" mb={4}>
-        <Text fontSize="2xl" fontWeight="bold">Todo App</Text>
+        <Text fontSize="3xl" fontWeight="extrabold">Get Stuff Done... Eventually!</Text>
       </Flex>
       <Box as="form" onSubmit={(e) => { e.preventDefault(); addTask(); }}>
         <Flex mb={4}>
