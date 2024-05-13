@@ -42,7 +42,7 @@ const Index = () => {
             onChange={(e) => setInput(e.target.value)}
             mr={2}
           />
-          <Button onClick={addTask} colorScheme="green">Add Task</Button>
+          <Button onClick={addTask} colorScheme="purple">Add Task</Button>
         </Flex>
       </Box>
       <List spacing={3}>

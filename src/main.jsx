@@ -12,6 +12,9 @@ const colors = {
   green: {
     500: "#38A169", // A vibrant green shade
   },
+  purple: {
+    500: "#9B5DE5", // A vibrant purple shade
+  },
 };
 
 const theme = extendTheme({ colors });
